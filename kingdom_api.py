@@ -58,8 +58,6 @@ def verify_match(dict1,dict2):
     flag = 0
     for i in keys:
         if(str(dict1[i]) != str(dict2[i])):
-            print '1',dict1[i]
-            print '2',dict2[i]
             flag = 1
             break
     return flag
