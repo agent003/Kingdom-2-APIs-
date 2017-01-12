@@ -1,0 +1,41 @@
+get_login:
+    method : POST
+    endpoint : http://api.example.com/v1//users/login/
+    maintainer : ekansh.singh
+    payload1:
+        email : example@gmail.com
+        password : password
+        app_version : 1.1
+    payload2:
+        email : dummy2@mintshow.com
+        password : mintshow
+    output1:
+        StatusCode: 1
+        Status: Success
+        StatusMsg: Login Successfully!
+    output2:
+        StatusCode: 1
+        Status: Failed
+        StatusMsg: Invalid app version
+
+get_registeruser:
+    method : POST
+    endpoint : http://api.example.com/v1//users/registeruser/
+    maintainer : ekansh.singh
+    payload1:
+        firstname : something
+        lastname : something
+        email : something@gmail.com
+        password : 12345678
+        gender : Male
+        app_version : 1.1
+        dob : 12-12-1996
+    output1:
+        StatusCode: 1
+        Status : Failed
+        StatusMsg : Email already exist   
+
+post_resetpassword:
+    method : POST
+    endpoint : http://api.example.com/v1//users/resetpassword/
+    maintainer : ekansh.singh
